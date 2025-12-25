@@ -1,0 +1,8 @@
+FROM nginx:stable-alpine
+COPY index.html /usr/share/nginx/html/index.html
+COPY styles.css /usr/share/nginx/html/styles.css
+COPY app.js /usr/share/nginx/html/app.js
+COPY movies.json /usr/share/nginx/html/movies.json
+COPY movies-large.json /usr/share/nginx/html/movies-large.json
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

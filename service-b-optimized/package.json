@@ -1,0 +1,15 @@
+{
+  "name": "service-b-optimized",
+  "version": "1.0.0",
+  "description": "Service B - Профилирование микросервиса (Node.js версия с JFR имитацией)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "Lab3",
+  "license": "MIT"
+}

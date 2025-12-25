@@ -1,0 +1,14 @@
+[
+  {"id":1,"title":"Inception","year":2010,"genre":"Sci-Fi","rating":8.8,"poster":"https://via.placeholder.com/400x600?text=Inception","description":"Кража идей из подсознания через сон."},
+  {"id":2,"title":"The Shawshank Redemption","year":1994,"genre":"Drama","rating":9.3,"poster":"https://via.placeholder.com/400x600?text=Shawshank","description":"Дружба и надежда за стенами тюрьмы."},
+  {"id":3,"title":"The Godfather","year":1972,"genre":"Crime","rating":9.2,"poster":"https://via.placeholder.com/400x600?text=Godfather","description":"Сага о семье и власти в мафии."},
+  {"id":4,"title":"The Dark Knight","year":2008,"genre":"Action","rating":9.0,"poster":"https://via.placeholder.com/400x600?text=Dark+Knight","description":"Бэтмен против Джокера в Готэме."},
+  {"id":5,"title":"Pulp Fiction","year":1994,"genre":"Crime","rating":8.9,"poster":"https://via.placeholder.com/400x600?text=Pulp+Fiction","description":"Пересекающиеся истории криминального мира."},
+  {"id":6,"title":"Forrest Gump","year":1994,"genre":"Drama","rating":8.8,"poster":"https://via.placeholder.com/400x600?text=Forrest+Gump","description":"Жизненный путь простого и доброго человека."},
+  {"id":7,"title":"Interstellar","year":2014,"genre":"Sci-Fi","rating":8.6,"poster":"https://via.placeholder.com/400x600?text=Interstellar","description":"Космическая одиссея ради спасения человечества."},
+  {"id":8,"title":"The Matrix","year":1999,"genre":"Sci-Fi","rating":8.7,"poster":"https://via.placeholder.com/400x600?text=Matrix","description":"Виртуальная реальность и выбор освобождения."},
+  {"id":9,"title":"Fight Club","year":1999,"genre":"Drama","rating":8.8,"poster":"https://via.placeholder.com/400x600?text=Fight+Club","description":"Критика потребительского общества и масса личности."},
+  {"id":10,"title":"The Lord of the Rings","year":2003,"genre":"Fantasy","rating":8.9,"poster":"https://via.placeholder.com/400x600?text=LOTR","description":"Эпическая битва за судьбу Средиземья."},
+  {"id":11,"title":"Spirited Away","year":2001,"genre":"Animation","rating":8.6,"poster":"https://via.placeholder.com/400x600?text=Spirited+Away","description":"Девочка в мире духов ищет путь домой."},
+  {"id":12,"title":"Parasite","year":2019,"genre":"Thriller","rating":8.6,"poster":"https://via.placeholder.com/400x600?text=Parasite","description":"Социальная сатира о классах и выживании."}
+]

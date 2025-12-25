@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  service-b:
+    build:
+      context: .
+      dockerfile: service-b/Dockerfile
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - service-b
+    restart: unless-stopped

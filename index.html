@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Подборка фильмов — Лабораторная</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container">
+      <h1>Подборка фильмов</h1>
+      <div class="subtitle">Вариант 4 — рекомендации фильмов</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div>
+        <h2 style="margin:0">Подберите фильм по жанру</h2>
+        <div class="subtitle">Ищите, фильтруйте и сохраняйте в избранное</div>
+      </div>
+      <div class="subtitle">API: <a href="http://localhost:3000/recommendations">/recommendations</a></div>
+    </div>
+
+    <section class="controls">
+      <input id="search" placeholder="Поиск по названию..." />
+      <select id="genre">
+        <option value="all">Все жанры</option>
+      </select>
+      <select id="year">
+        <option value="all">Все года</option>
+      </select>
+      <label>Рейтинг ≥ <input id="minRating" type="number" min="0" max="10" step="0.1" value="0"/></label>
+      <select id="sort">
+        <option value="default">Без сортировки</option>
+        <option value="title-asc">По названию ↑</option>
+        <option value="title-desc">По названию ↓</option>
+        <option value="year-desc">По году ↓</option>
+        <option value="rating-desc">По рейтингу ↓</option>
+      </select>
+      <label style="margin-left:8px">Показать топ
+        <input id="limit" type="number" min="1" step="1" value="10" style="width:72px;margin-left:6px" />
+        фильмов
+      </label>
+      <button id="applyFilters" class="button">Применить фильтры</button>
+      <button id="clearFilters" class="button ghost">Сброс</button>
+    </section>
+
+    <section class="actions">
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button id="showWatchlist" class="button ghost">Показать избранное</button>
+        <button id="exportWatchlist" class="button ghost">Экспорт избранного</button>
+        <button id="fetchFromApi" class="button primary">Обновить из API</button>
+        <button id="loadLarge" class="button">Загрузить большой датасет</button>
+        <input id="importFile" type="file" accept="application/json" />
+      </div>
+      <div style="margin-top:8px;color:#666;font-size:13px">Кнопка "Применить фильтры" применяет фильтры локально. "Обновить из API" запрашивает рекомендации у сервера (учтите поле "Показать топ").</div>
+    </section>
+
+    <section id="list" class="list"></section>
+
+    <div class="footer">Запуск через Docker: <code>docker-compose up --build</code></div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
