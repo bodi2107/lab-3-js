@@ -36,5 +36,5 @@ docker-compose up --build -d
 
 
 
-Если хотите Java‑версию `service-b` для работы с JFR/JMC — сделаю по запросу.
+
 
